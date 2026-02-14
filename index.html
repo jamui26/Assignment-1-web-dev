@@ -1,41 +1,22 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-
-<!-- 
-    <h1>smart event dashboard</h1>
-
-    <h2>Add New Event</h2>
-
-    <form id="eventForm">
-         <input type="text" id="eventName">
-         <input type="data">
-         <select>
-            <option>Default</option>
-            <otption>Sample</otption>
-            <option>Sample</option>
-            <option>Sample</option>
-         </select>
-         <textarea></textarea>
-         <button>Add event</button>
-
-    </form> -->
-
-
-<h1>🎯 Smart Event Dashboard</h1>
+    <h1>🎯 Smart Event Dashboard</h1>
 
     <!-- Add Event Form -->
     <h2>Add New Event</h2>
     <form id="eventForm">
         <label>Event Title:<input type="text" id="eventTitle" required></label>
         <br><br>
-        <label>Event Date:<input type="date" id="eventDate" required></label>
+        <label>Event Date:<input type="date" id="eventDate" required min="0000-01-01" max="9999-12-31"></label>
         <br><br>
         <label>
             Category:
@@ -72,9 +53,12 @@
 
     <div id="demoContent">
         Press any key to see the difference!
-    </div>    
+    </div>
+
+
+
 
     <script src="script.js"></script>
-    
 </body>
+
 </html>
